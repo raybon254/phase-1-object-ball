@@ -70,11 +70,9 @@ function teamNames() {
     const object = gameObject();
     let teamNamesArr = [];
     for (team in object){
-        console.log(object[team]["teamName"])
         teamNamesArr.push(object[team]["teamName"])
     }
-    console.log(teamNamesArr)
-    return teamNamesArr;
+    console.log(teamNamesArr.join(", "))
 }
 function playerNumbers(teamName) {
     const object = gameObject();
