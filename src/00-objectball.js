@@ -102,7 +102,7 @@ function gameObject()  {
                     blocks: 1,
                     slamDunks: 0,
                 },
-                'Bredan Haywood':{
+                'Brendan Haywood':{
                     number: 33,
                     shoe: 15,
                     points: 6,
@@ -182,7 +182,7 @@ const teamColors = (team) => {
         console.log(`${team} kit colors are ${color}`);
     }
     else{
-        console.log('Player not found.')
+        console.log('Team not found.')
     }
 }
 
@@ -193,7 +193,7 @@ const  teamName = () => {
     const hteam = gameObject().home.teamName;
     const ateam = gameObject().away.teamName;
     const teams = [`${hteam},${ateam}`];
-    console.log(teams)
+    console.log(teams.join(", "))
 }
 //PLAYER NUMBERS
 
@@ -315,7 +315,7 @@ const winningTeam = () => {
         return "It's a tie!";
     }
 }
-
+console.log(winningTeam())
 
 //PLAYERWITHLONGESTNAME
 
