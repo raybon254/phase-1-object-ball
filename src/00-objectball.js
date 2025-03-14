@@ -192,8 +192,9 @@ const teamColors = (team) => {
 const  teamName = () => {
     const hteam = gameObject().home.teamName;
     const ateam = gameObject().away.teamName;
-    const teams = [`${hteam},${ateam}`];
-    console.log(teams.join(", "))
+    let teams = [];
+    teams.push(hteam,ateam)
+    console.log(teams.join(', '))
 }
 //PLAYER NUMBERS
 
